@@ -1,10 +1,13 @@
-.toptitle {
+.jumbotron {
     text-align: center;
     background-color: maroon;
     color: antiquewhite;
+    margin: 20px;
+    padding: 3px;
 }
 
 body {
     background-color: antiquewhite;
     color: maroon;
+    font-family: "Poppins", sans-serif;
 }
