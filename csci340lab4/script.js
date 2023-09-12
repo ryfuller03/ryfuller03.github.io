@@ -1,21 +1,40 @@
 $(document).ready(function() {
+  var bb_score = 0;
+  var got_score = 0;
+
+
     $('#clicker').click(function() {
       $.ajax({
         dataType: "json",
-        url: "https://random.dog/woof.json",
+        url: "https://api.breakingbadquotes.xyz/v1/quotes",
         success: function(results) {
-          console.log(results["url"]);
-          if (results["url"].endsWith(".mp4")) {
-            $('#dog').attr("src", "images/blank.png");
-          } else {
-            $('#dog').attr("src", results["url"]);
-          }
+          console.log(results[0]["quote"]);
+          $('#bb-quote').text(results[0]["quote"]);
         },
         error: function(xhr,status,error) {
           console.log(error);
         }
       });
+    $.ajax({
+      dataType: "json",
+      url: "https://api.gameofthronesquotes.xyz/v1/random",
+      success: function(results) {
+        console.log(results["sentence"]);
+        $('#got-quote').text(results["sentence"]);
+      },
+      error: function(xhr,status,error) {
+        console.log(error);
+      }
     });
   });
 
-  // just the template from Goadrich website for now, but will be updated with my own info and functions soon!
+  $('#vote-got').click(function() {
+    got_score += 1;
+    $("#score-got").text(got_score);
+  })
+
+  $('#vote-bb').click(function() {
+    bb_score += 1;
+    $("#score-bb").text(bb_score);
+  })
+});

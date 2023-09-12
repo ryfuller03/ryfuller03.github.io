@@ -1,0 +1,25 @@
+#titlebar {
+    color: black;
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.col-lg-12 {
+    text-align: center;
+}
+
+#clicker {
+    color: black;
+}
+
+body {
+    color: black;
+}
+
+.col-lg-6 {
+    text-align: center;
+}
+
+.scores {
+    font-size: 100px;
+}
