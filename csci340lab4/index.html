@@ -2,11 +2,15 @@
 <html>
 <head>
   <title>Quote Battle!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@1,300&family=Noto+Sans+Meroitic&family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="style.css" rel="stylesheet">
+  
 </head>
 <body>
-<div class="container">
+<div class="container"> 
     <div class="row">
         <div class="col-lg-12">
             <h1 id="titlebar">Quote Battle!</h1>
@@ -14,36 +18,50 @@
     </div>
     <div class="row">
       <div class="col-lg-12">
-        <input id="clicker" type="button" value="Get Quotes"></input>
+        <input id="clicker" class="btn btn-primary" type="button" value="Get Quotes"></input>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="images/breakingbad.png" width="400" height="200">
+      </div>
+      <div class="col-lg-6">
+        <img src="images/got.jpeg" width="400" height="200">
       </div>
     </div>
   <div class="row">
     <div class="col-lg-6">
-      <h3>Breaking Bad</h3>
+      <h2 class="show-title" style="font-family: 'Bebas Neue', sans-serif; font-size: 38px">Breaking Bad</h2>
     </div>
     <div class="col-lg-6">
-        <h3>Game of Thrones</h3>
+        <h2 class="show-title" style="font-family: 'Playfair Display', sans-serif">Game of Thrones</h2>
     </div>
   </div>
   <div class="row">
+    <div class="quotes">
     <div class="col-lg-6">
-      <div id="bb-quote"> This is the Breaking Bad Quote!</div>
-    </div>
+      <div id="bb-quote">
+        <h3>Click the "Get Quotes" button to get started!</h3>
+      </div>
+  </div>
     <div class="col-lg-6">
-      <div id="got-quote"> This is the Game of Thrones Quote!</div>
+      <div id="got-quote">
+        <h3>Click the "Get Quotes" button to get started!</h3>
+      </div>
     </div>
+  </div>
   </div>
     <div class="row">
     <div class="col-lg-12">
-      <h2>Which One Goes Harder?</h2>
+      <h2 id="which-one">Which one is better?</h2>
     </div>
   </div>
   <div class="row">
     <div class="col-lg-6">
-      <input id="vote-bb" type="button"value="Breaking Bad"></input>
+      <input id="vote-bb" class="btn btn-primary" type="button" value="Breaking Bad"></input>
     </div>
     <div class="col-lg-6">
-      <input id="vote-got" type="button" value="Game of Thrones"></input>
+      <input id="vote-got" type="button" class="btn btn-primary" value="Game of Thrones"></input>
     </div>
   </div>
   <div class="row">
