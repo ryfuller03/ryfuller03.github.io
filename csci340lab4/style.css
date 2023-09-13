@@ -31,6 +31,18 @@
     font-family: 'Noto Sans Meroitic', sans-serif;
 }
 
+#author-bb {
+    font-family: 'Noto Sans Meroitic', sans-serif;
+    color: rgb(83, 8, 8);
+    font-weight: bold;
+}
+
+#author-got {
+    font-family: 'Noto Sans Meroitic', sans-serif;
+    color: rgb(83, 8, 8);
+    font-weight: bold;
+}
+
 .col-lg-6 {
     text-align: center;
 }

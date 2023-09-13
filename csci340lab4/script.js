@@ -10,6 +10,7 @@ $(document).ready(function() {
         success: function(results) {
           console.log(results[0]["quote"]);
           $('#bb-quote').text(results[0]["quote"]);
+          $('#author-bb').text("-" + results[0]["author"]);
         },
         error: function(xhr,status,error) {
           console.log(error);
@@ -21,6 +22,7 @@ $(document).ready(function() {
       success: function(results) {
         console.log(results["sentence"]);
         $('#got-quote').text(results["sentence"]);
+        $('#author-got').text("-" + results["character"]["name"]);
       },
       error: function(xhr,status,error) {
         console.log(error);
